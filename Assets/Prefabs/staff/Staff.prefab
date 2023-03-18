@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 4596640331168922}
   - component: {fileID: 95672999797837872}
   m_Layer: 0
-  m_Name: SM_Chr_FarmBoy_01
+  m_Name: Staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
