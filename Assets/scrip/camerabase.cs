@@ -27,7 +27,7 @@ public class  camerabase : MonoBehaviour
 
     private void MoveByKB()
     {
-        float xInput = Input.GetAxis("horizontal");
+        float xInput = Input.GetAxis("Horizontal");
         float zInput = Input.GetAxis("Vertical");
 
         Vector3 dir = transform.forward * zInput + transform.right * zInput;
