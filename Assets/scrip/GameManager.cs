@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public GameObject staffPrefab;
     public GameObject staffParent;
 
+    public GameObject sapmPos;
+    public GameObject rallryPos;
+
     public static GameManager instance;
     private void Start()
     {
