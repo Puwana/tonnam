@@ -14,7 +14,7 @@ public enum UnitState
     Walk,
 }
 
-public class Staffq : MonoBehaviour
+public class Staff : MonoBehaviour
 {
     private int _id;
     
@@ -57,7 +57,7 @@ public class Staffq : MonoBehaviour
         set { navAgent = value; }
     }
 
-    public UnitState Stats
+    public UnitState State
     {
         get { return state; }
         set { state = value; }

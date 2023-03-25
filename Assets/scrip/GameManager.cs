@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < 20; i++)
         {
             GameObject staffObj = Instantiate(staffPrefab, staffParent.transform);
-            Staffq s = staffObj.GetComponent<Staffq>();
+            Staff s = staffObj.GetComponent<Staff>();
             
             s.InitCharID(i);
             s.ChangeCharSkin();

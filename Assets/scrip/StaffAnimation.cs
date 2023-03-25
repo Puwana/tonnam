@@ -7,34 +7,34 @@ using UnityEngine.Video;
 
 public class StaffAnimation : MonoBehaviour
 {
-    private Animator amin;
-    private Staffq staffq;
+    private Animator anim;
+    private Staff staff;
 
     void Awake()
     {
-        amin = GetComponent<Animator>();
-        staffq = GetComponent<Staffq>();
+        anim = GetComponent<Animator>();
+        staff = GetComponent<Staff>();
     }
 
 
     void Update()
     {
-        if (staffq.Stats == UnitState.Idle)
+        if (staff.State == UnitState.Idle)
         {
             DisableAll();
-            amin.SetBool("isIdle", true);
+            anim.SetBool("isIdle", true);
         }
-        else if (staffq.Stats == UnitState.Walk)
+        else if (staff.State == UnitState.Walk)
         {
             DisableAll();
-            amin.SetBool("isWalk", true);
+            anim.SetBool("isWalk", true);
         }
     }
 
     private void DisableAll()
     {
-        amin.SetBool("isIdle", false);
-        amin.SetBool("isWalk",false);
+        anim.SetBool("isIdle", false);
+        anim.SetBool("isWalk",false);
         
         
     }
