@@ -1,10 +1,55 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.Events;
+using Random = UnityEngine.Random;
+
+
+public enum UnitState
+{
+    Idle,
+    Walk,
+}
 
 public class Staffq : MonoBehaviour
 {
     private int _id;
+
+    [SerializeField] private UnitState state;
+    [SerializeField] private NavMeshAgent navAgent;
+
+    private void Awake()
+    {
+        navAgent = GetComponent<NavMeshAgent>();
+    }
+
+    public void SetWalk(Vector3 dest)
+    {
+        state = UnitState.Walk;
+
+        navAgent.SetDestination(dest);
+        navAgent.isStopped = false;
+    }
+
+    private void CheckStop()
+    {
+        float dist = Vector3.Distance(transform.position, navAgent.destination);
+    }
+
+    public NavMeshAgent NavAgent
+    {
+        get { return navAgent; }
+        set { navAgent = value; }
+    }
+
+    public UnitState Stats
+    {
+        get { return state; }
+        set { state = value; }
+    }
     public int ID
     {
         get { return _id; }
@@ -27,7 +72,7 @@ public class Staffq : MonoBehaviour
         charSkinId = Random.Range(0, charSkin.Length - 1);
         staffName = "xxxx";
         dailyWage = Random.Range(80, 125);
-        ChangeCharSkin();
+        
         
     }
 

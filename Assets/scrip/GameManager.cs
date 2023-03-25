@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
             Staffq s = staffObj.GetComponent<Staffq>();
             
             s.InitCharID(i);
+            s.ChangeCharSkin();
+            
+            s.SetWalk(rallryPos.transform.position);
         }
     }
 }
