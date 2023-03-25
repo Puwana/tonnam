@@ -24,6 +24,11 @@ public class StaffAnimation : MonoBehaviour
             DisableAll();
             amin.SetBool("isIdle", true);
         }
+        else if (staffq.Stats == UnitState.Walk)
+        {
+            DisableAll();
+            amin.SetBool("isWalk", true);
+        }
     }
 
     private void DisableAll()

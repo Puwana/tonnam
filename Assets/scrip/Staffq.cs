@@ -17,6 +17,7 @@ public enum UnitState
 public class Staffq : MonoBehaviour
 {
     private int _id;
+    
 
     [SerializeField] private UnitState state;
     [SerializeField] private NavMeshAgent navAgent;
@@ -24,6 +25,11 @@ public class Staffq : MonoBehaviour
     private void Awake()
     {
         navAgent = GetComponent<NavMeshAgent>();
+    }
+
+    private void Update()
+    {
+        CheckStop();
     }
 
     public void SetWalk(Vector3 dest)
@@ -37,6 +43,12 @@ public class Staffq : MonoBehaviour
     private void CheckStop()
     {
         float dist = Vector3.Distance(transform.position, navAgent.destination);
+
+        if (dist <= 3f)
+        {
+            state = UnitState.Idle;
+            navAgent.isStopped = true;
+        }
     }
 
     public NavMeshAgent NavAgent
