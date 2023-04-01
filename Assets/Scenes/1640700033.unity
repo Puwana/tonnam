@@ -1458,7 +1458,7 @@ GameObject:
   - component: {fileID: 798558552}
   - component: {fileID: 798558551}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1858,7 +1858,7 @@ GameObject:
   - component: {fileID: 1024686004}
   - component: {fileID: 1024686003}
   m_Layer: 5
-  m_Name: Panel (4)
+  m_Name: corn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1936,7 +1936,7 @@ GameObject:
   - component: {fileID: 1032990839}
   - component: {fileID: 1032990838}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: wheat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2166,7 +2166,7 @@ GameObject:
   - component: {fileID: 1240821001}
   - component: {fileID: 1240821000}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2627,7 +2627,7 @@ GameObject:
   - component: {fileID: 1452265175}
   - component: {fileID: 1452265174}
   m_Layer: 5
-  m_Name: Panel (5)
+  m_Name: apple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3082,7 +3082,7 @@ GameObject:
   - component: {fileID: 1818136399}
   - component: {fileID: 1818136398}
   m_Layer: 5
-  m_Name: Panel (3)
+  m_Name: melon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
