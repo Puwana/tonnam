@@ -11,6 +11,13 @@ public class GameManager : MonoBehaviour
     public GameObject sapmPos;
     public GameObject rallryPos;
 
+    public int money;
+    public int staff;
+    public int wheat;
+    public int melon;
+    public int corn;
+    public int apple;
+        
     public static GameManager instance;
     private void Start()
     {
