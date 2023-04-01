@@ -8,10 +8,14 @@ using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 
-public enum UnitState
+public enum UniteState
 {
     Idle,
     Walk,
+    Plow,
+    Water,
+    Sow,
+    Harvest,
 }
 
 public class Staff : MonoBehaviour
@@ -19,7 +23,7 @@ public class Staff : MonoBehaviour
     private int _id;
     
 
-    [SerializeField] private UnitState state;
+    [SerializeField] private UniteState state;
     [SerializeField] private NavMeshAgent navAgent;
 
     private void Awake()
@@ -34,7 +38,7 @@ public class Staff : MonoBehaviour
 
     public void SetWalk(Vector3 dest)
     {
-        state = UnitState.Walk;
+        state = UniteState.Walk;
 
         navAgent.SetDestination(dest);
         navAgent.isStopped = false;
@@ -46,7 +50,7 @@ public class Staff : MonoBehaviour
 
         if (dist <= 3f)
         {
-            state = UnitState.Idle;
+            state = UniteState.Idle;
             navAgent.isStopped = true;
         }
     }
@@ -57,7 +61,7 @@ public class Staff : MonoBehaviour
         set { navAgent = value; }
     }
 
-    public UnitState State
+    public UniteState State
     {
         get { return state; }
         set { state = value; }

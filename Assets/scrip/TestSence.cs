@@ -8,12 +8,32 @@ public class TestSence : MonoBehaviour
 
     public void ButtonIdle()
     {
-        staff.State = UnitState.Idle;
+        staff.State = UniteState.Idle;
     }
-    
+
     public void ButtonWalk()
     {
-        staff.State = UnitState.Walk;
+        staff.State = UniteState.Walk;
+    }
+
+    public void ButtonPlow()
+    {
+        staff.State = UniteState.Plow;
+    }
+
+    public void ButtonWater()
+    {
+        staff.State = UniteState.Water;
+    }
+
+    public void ButtonSow()
+    {
+        staff.State = UniteState.Sow;
+    }
+
+    public void ButtonHarvest()
+    {
+        staff.State = UniteState.Harvest;
     }
 }
     
