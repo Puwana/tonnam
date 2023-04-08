@@ -30,7 +30,7 @@ public class  camerabase : MonoBehaviour
         float xInput = Input.GetAxis("Horizontal");
         float zInput = Input.GetAxis("Vertical");
 
-        Vector3 dir = transform.forward * zInput + transform.right * zInput;
+        Vector3 dir = transform.forward * zInput + transform.right * xInput;
 
         transform.position += dir * moveSpeed * Time.deltaTime;
     }

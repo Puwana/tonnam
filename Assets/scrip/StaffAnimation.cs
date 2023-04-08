@@ -18,32 +18,32 @@ public class StaffAnimation : MonoBehaviour
 
     private void Update()
     {
-        if (staff.State == UniteState.Idle)
+        if (staff.State == UnitState.Idle)
         {
             DisableAll();
             anim.SetBool("isIdle",true);
         }
-        else if (staff.State == UniteState.Walk)
+        else if (staff.State == UnitState.Walk)
         {
             DisableAll();
             anim.SetBool("isWalk",true);
         }
-        else if (staff.State == UniteState.Harvest)
+        else if (staff.State == UnitState.Harvest)
         {
             DisableAll();
             anim.SetBool("isHarvest",true);
         }
-        else if (staff.State == UniteState.Sow)
+        else if (staff.State == UnitState.Sow)
         {
             DisableAll();
             anim.SetBool("isSow",true);
         }
-        else if (staff.State == UniteState.Water)
+        else if (staff.State == UnitState.Water)
         {
             DisableAll();
             anim.SetBool("isWater",true);
         }
-        else if (staff.State == UniteState.Plow)
+        else if (staff.State == UnitState.Plow)
         {
             DisableAll();
             anim.SetBool("isPlow",true);

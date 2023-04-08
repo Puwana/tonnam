@@ -8,7 +8,10 @@ public enum StructureType
 {
     road,
     building,
-    wheat
+    wheat,
+    melon,
+    corn,
+    apple,
 }
 
  
